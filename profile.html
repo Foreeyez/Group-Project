@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="main">
+        <img class="logo" src="./img/LOGO.jpg" alt="" />
+        <div class="inse">
+          <input type="search" placeholder="Search and place the highest bid" />
+          <button>Search</button>
+        </div>
+        <span class="shuu">
+          <span class="boo">
+            <img
+              src="./img/person_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <!-- <hr> -->
+            <p>Account</p>
+            <img
+              src="./img/keyboard_arrow_down_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+            <!-- <img src="./img/keyboard_arrow_up_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt=""> -->
+          </span>
+          <div class="acc-dropdown">
+            <div>
+              <button>SIGN IN</button>
+            </div>
+            <div>
+              <span>
+                <img
+                  src="./img/person_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt=""
+                />
+                <p>My Account</p>
+              </span>
+              <span>
+                <img
+                  src="./img/shopping_cart_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt=""
+                />
+                <p>My Bids</p>
+              </span>
+              <span>
+                <img
+                  src="./img/favorite_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt=""
+                />
+                <p>Saved Items</p>
+              </span>
+            </div>
+          </div>
+          <div class="login-dropdown">
+            <div>
+              <span>
+                <img
+                  src="./img/person_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt=""
+                />
+                <a href="profile.html">My Account</a>
+              </span>
+              <span>
+                <img
+                  src="./img/shopping_cart_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt=""
+                />
+                <a href="#">My Bids</a>
+              </span>
+              <span>
+                <img
+                  src="./img/favorite_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt=""
+                />
+                <a href="#">Saved Items</a>
+              </span>
+              <span>
+                <img
+                  src="./img/mail_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt=""
+                />
+                <a href="#">Inbox</a>
+              </span>
+            </div>
+            <div>
+              <a href="#"> <button id="signoutbtn">Sign Out</button></a>
+            </div>
+          </div>
+        </span>
+      </div>
+      <div class="categories">
+        <div class="cat-pad">
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="auctions.html">Auctions</a>
+            <a href="#">Auctioneers</a>
+            <a href="#">Categories</a>
+            <a href="#">How it Works</a>
+            <a href="About.html">About us</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="profile-info">
+        <img
+          src="./img/profile_picture.jpg"
+          alt="Profile Picture"
+          class="profile-picture"
+        />
+        <div class="info">
+          <h2>John Doe</h2>
+          <p>Email: johndoe@example.com</p>
+          <button id="edit-profile-btn">Edit Profile</button>
+        </div>
+      </section>
+      <section class="profile-details">
+        <h3>My Bids</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Current Bid</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Antique Vase</td>
+              <td>$200</td>
+              <td>Winning</td>
+            </tr>
+            <tr>
+              <td>Vintage Car</td>
+              <td>$15,000</td>
+              <td>Outbid</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="profile-details">
+        <h3>Saved Items</h3>
+        <ul>
+          <li>Painting by Picasso</li>
+          <li>Rolex Watch</li>
+          <li>Diamond Necklace</li>
+        </ul>
+      </section>
+      <section class="profile-details">
+        <h3>Inbox</h3>
+        <ul>
+          <li>Message from Seller: Your bid was accepted</li>
+          <li>Reminder: Auction ending soon</li>
+          <li>Update: New items in your saved categories</li>
+        </ul>
+      </section>
+      <section class="profile-actions">
+        <button id="place-item-btn">Place an Item for Auction</button>
+      </section>
+    </main>
+
+    <!-- Edit Profile Form Modal -->
+    <div id="edit-profile-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Edit Profile</h2>
+        <form id="edit-profile-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" value="John Doe" required />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value="johndoe@example.com"
+            required
+          />
+
+          <label for="profile-picture">Profile Picture:</label>
+          <input
+            type="file"
+            id="profile-picture"
+            name="profile-picture"
+            accept="image/*"
+          />
+
+          <button type="submit">Save Changes</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./script/profile.js"></script>
+    <script src="./script/header.js"></script>
+  </body>
+  <footer>
+    <div id="footer" class="py-3">
+      <div class="foot-space">
+        <ul>
+          <span>Product</span>
+          <br />
+          <li><a href="#">Overview</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Marketplace</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Integrations</a></li>
+        </ul>
+        <ul>
+          <span>Company</span>
+          <br />
+          <li><a href="#">About</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+        <ul>
+          <span>Connect</span>
+          <br />
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">Linkedin</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</html>

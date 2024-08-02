@@ -1,0 +1,86 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+body{
+     background-color:#333;
+     font-family: sans-serif;
+}
+.Signup-container{
+     width: 360px;
+     height: 600px;
+     margin: auto;
+     background-color: white;
+     border-radius: 5px;
+}
+.login-box{
+     margin: auto;
+     width: 360px;
+     height: 300px;
+     background: white;
+     border-radius: 5px;
+}
+h1{
+     text-align: center;
+     padding-top: 15px;
+}
+h4{
+     text-align: center;
+     padding-top: 6px;
+}
+form{
+     width: 300px;
+     margin-left: 20px;
+}
+form label{
+     display: flex;
+     margin-top: 20px;
+     font-size: 18px;
+
+}
+form input{
+     width: 100%;
+     padding: 8px;
+     border: none;
+     border: 1px solid gray;
+     border-radius: 6px;
+     outline: none;
+}
+input[type="button"]{
+     font-size: 18px;
+     width: 320px;
+     height: 35px;
+     margin-top: 20px;
+     border: none;
+     background-color:rgb(67, 67, 163);
+     color: white;
+}
+p{
+     font-size: 15px;
+     text-align: center;
+     padding-top: 20px;
+}
+.bottom{
+     text-align: center;
+     color: #fff;
+     font-size: 15px;
+     margin-top: -10px;
+}
+.bottom a{
+     color:rgb(85, 226, 226);
+}
+.bottom-2 a{
+     color: rgb(85, 226, 226);
+}
+.bottom a:hover{
+     color: aliceblue;
+}
+.bottom-2 a:hover{
+     color: aliceblue;
+}
+@media screen and (min-width: 420px){
+     
+
+     
+}
