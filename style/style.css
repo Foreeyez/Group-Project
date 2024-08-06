@@ -218,6 +218,7 @@ hr {
   position: absolute;
   top: 100%;
   right: 0;
+  align-items: center;
   background-color: white;
   padding: 30px;
   border-radius: 4px;
@@ -448,7 +449,7 @@ hr {
 }
 
 .login-dropdown span {
-  width: 50%;
+  width: auto;
   display: flex;
   padding: 20px;
   align-items: center;
@@ -457,7 +458,7 @@ hr {
 }
 
 .main .login-dropdown {
-  width: 200%;
+  width: fit-content;
 }
 
 main {
