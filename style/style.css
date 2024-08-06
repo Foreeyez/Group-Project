@@ -158,6 +158,12 @@ hr {
   padding: 8rem 7rem 6rem 0rem;
 }
 
+.foot-space {
+  display: flex;
+  flex-direction: row;
+}
+
+
 /* Nav */
 .main {
   display: flex;
