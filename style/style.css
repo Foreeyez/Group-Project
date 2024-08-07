@@ -254,6 +254,7 @@ hr {
 .categories{
   background-color: #5084c1;
   color: white;
+  /* position: relative; */
 }
 
 .cat-pad{
@@ -265,6 +266,7 @@ hr {
   justify-content: space-between;
   padding: 10px 0;
   width: 100%;
+  height: 30px;
 }
 
 .categories nav a {
@@ -737,4 +739,11 @@ footer {
 
 #footer ul li a {
   color: hsl(240, 2%, 79%);
+}
+#how{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  
+  
 }
