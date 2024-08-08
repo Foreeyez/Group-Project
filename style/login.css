@@ -4,7 +4,7 @@
      box-sizing: border-box;
 }
 body{
-     background-color:#333;
+     background-color: #5084c1;
      font-family: sans-serif;
 }
 .Signup-container{
@@ -13,6 +13,7 @@ body{
      margin: auto;
      background-color: white;
      border-radius: 5px;
+     margin-top: 0.7rem;
 }
 .login-box{
      margin: auto;
@@ -20,6 +21,7 @@ body{
      height: 300px;
      background: white;
      border-radius: 5px;
+     margin-top: 0.7rem;
 }
 h1{
      text-align: center;
@@ -53,9 +55,11 @@ input[type="button"]{
      height: 35px;
      margin-top: 20px;
      border: none;
+     text-transform: uppercase;
      background-color:rgb(67, 67, 163);
      color: white;
 }
+
 p{
      font-size: 15px;
      text-align: center;
@@ -79,8 +83,59 @@ p{
 .bottom-2 a:hover{
      color: aliceblue;
 }
-@media screen and (min-width: 420px){
-     
+@media screen  and (max-width: 920px){
+     .Signup-container{
+          margin-top: 2rem;
+          width: 340px;
+     }
+     input[type="button"]{
+          width: 300px;
+          
+     }
 
-     
+     .login-box{
+          margin-top: 3rem;
+          width: 340px;
+     }
+
 }
+/* moblie reponsiveness for tablets */
+/* @media screen and (max-width: 1140px) {
+     
+     .Signup-container{
+          width: 80%;
+          height: 750px;
+          margin-top: 3rem;
+     }
+    
+     form input{
+          width: 600px;
+          padding: 15px;
+     }
+     form label{
+          font-size: 24px;
+     }
+     form input[type="button"]{
+          width: 600px;
+          padding: 20px;
+          height: 70px;
+     }
+     form input[value="submit"]{
+          font-size: 2rem;
+          
+     }
+     p{
+          font-size: 22px;
+     }
+     h1{
+          font-size: 2.5rem;
+     }
+     h4{
+          font-size: 2rem;
+     }
+
+     .bottom{
+          font-size: 2rem;
+     }
+     
+} */

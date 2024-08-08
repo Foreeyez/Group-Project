@@ -11,91 +11,66 @@
     <link rel="stylesheet" href="/Group-Project/project/how_it_works.html">
     <link rel="stylesheet" href="/Group-Project/project/work.css">
     <script src="/Group-Project/script/app.js"></script>
+    <link rel="stylesheet" href="data.json" />
+    <script src="./script/script.js"></script>
   </head>
-  <body>
-    <header>
-      <div class="main">
-        <img class="logo" src="../img/LOGO.jpg" alt="" />
-        <div class="inse">
-          <input type="search" placeholder="Search and place the highest bid" />
-          <button>Search</button>
-        </div>
-        <span class="shuu">
-          <span class="boo">
-            <img
-              src="./img/person_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
-              alt=""
-            />
-            <!-- <hr> -->
-            <p>Account</p>
-            <img
-              src="./img/keyboard_arrow_down_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
-              alt=""
-            />
-            <!-- <img src="./img/keyboard_arrow_up_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt=""> -->
-          </span>
-          <div class="acc-dropdown">
-            <div>
-              <button>SIGN IN</button>
-            </div>
-            <div>
-              <span>
-                <img
-                  src="./img/person_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
-                  alt=""
-                />
-                <p>My Account</p>
-              </span>
-              <span>
-                <img
-                  src="./img/shopping_cart_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
-                  alt=""
-                />
-                <p>My Bids</p>
-              </span>
-              <span>
-                <img
-                  src="./img/favorite_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
-                  alt=""
-                />
-                <p>Saved Items</p>
-              </span>
-            </div>
+<body>
+  <header>
+    <div class="main">
+      <img class="logo" src="../img/LOGO.jpg" alt="" />
+      <div class="inse">
+        <input type="search" placeholder="Search and place the highest bid" />
+        <button>Search</button>
+      </div>
+      <span class="shuu">
+        <span class="boo">
+          <img src="./img/person_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+          <!-- <hr> -->
+          <p>Account</p>
+          <img src="./img/keyboard_arrow_down_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+          <!-- <img src="./img/keyboard_arrow_up_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt=""> -->
+        </span>
+        <div class="acc-dropdown">
+          <div>
+            <button>SIGN IN</button>
           </div>
-          <div class="login-dropdown">
-            <div>
-              <span>
-                <img
-                  src="./img/person_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
-                  alt=""
-                />
-                <p>My Account</p>
-              </span>
-              <span>
-                <img
-                  src="./img/shopping_cart_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
-                  alt=""
-                />
-                <p>My Bids</p>
-              </span>
-              <span>
-                <img
-                  src="./img/favorite_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
-                  alt=""
-                />
-                <p>Saved Items</p>
-              </span>
-              <span>
-                <img
-                  src="./img/mail_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
-                  alt=""
-                />
-                <p>Inbox</p>
-              </span>
-            </div>
-            <div>
-              <button id="signoutbtn">Sign Out</button>
-            </div>
+          <div>
+            <span>
+              <img src="./img/person_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+              <p>My Account</p>
+            </span>
+            <span>
+              <img src="./img/shopping_cart_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+              <p>My Bids</p>
+            </span>
+            <span>
+              <img src="./img/favorite_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+              <p>Saved Items</p>
+            </span>
+          </div>
+
+        </div>
+        <div class="login-dropdown">
+          <div>
+            <span>
+              <img src="./img/person_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+              <p>My Account</p>
+            </span>
+            <span>
+              <img src="./img/shopping_cart_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+              <p>My Bids</p>
+            </span>
+            <span>
+              <img src="./img/favorite_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+              <p>Saved Items</p>
+            </span>
+            <span>
+              <img src="./img/mail_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+              <p>Inbox</p>
+            </span>
+          </div>
+          <div>
+            <button id="signoutbtn">Sign Out</button>
           </div>
         </span>
       </div>
@@ -146,16 +121,29 @@
           </div>
         </div>
       </div>
+        </div>
+      </span>
+    </div>
+    <div class="categories">
+      <div class="cat-pad">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="auctions.html">Auctions</a>
+          <a href="#">Auctioneers</a>
+          <a href="#">Categories</a>
+          <a href="#">How it Works</a>
+          <a href="About.html">About us</a>
+        </nav>
       </div>
-    </header>
-
+    </div>
+  </header>
     <!-- Content area -->
     <div class="wrap_flex my-3 wrapper">
       <div class="first_part">
-        <div class="auction_img">
-          <img src="./img/pexels-pixabay-159862.jpg" alt="" />
+        <div class="auction_img" id="single_img">
+          <!-- <img src="./img/pexels-pixabay-159862.jpg" alt="" /> -->
         </div>
-        <p>
+        <p id="single_story">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi dolor
           possimus sapiente ex eaque? Possimus mollitia odit sapiente modi
           labore. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -164,60 +152,62 @@
       </div>
       <div class="second_part">
         <div class="content">
-          <p>Art/Painting</p>
-          <h1>Nativity</h1>
+          <p id="single_cat"></p>
+          <h1 id="single_name"></h1>
           <p>Four offset lithographs printed in colours</p>
           <p>27 1/5 × 18 9/10 in | 69 × 48 cm</p>
           <p>From an unknown editions</p>
           <hr />
-          <h3>Estimated value: £800–£1,200</h3>
+          <h3 id="start_b"></h3>
           <div class="flex_cont">
             <div>
               <h2>Current bid</h2>
             </div>
             <div>
-              <h2>$800</h2>
+              <h2 id="current_b"></h2>
             </div>
           </div>
           <p>1 bid</p>
-          <p>This auction has a buyer’s premium.</p>
+          <p id="single_end_time"></p>
           <p>Shipping, taxes, and additional fees may apply.</p>
           <hr />
           <h3>Place max bid</h3>
-          <input class="input_area" type="number" />
-          <a class="btn my-1" href="#">Bid</a>
-        </div>
+          <input class="input_area" type="number" id="bid_value" />
+          <a class="btn my-1" href="#" onclick="logoo()">Bid</a>
       </div>
     </div>
-  </body>
-  <footer>
-    <div id="footer" class="py-3">
-      <div class="foot-space">
-        <ul>
-          <span>Product</span>
-          <br />
-          <li><a href="#">Overview</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Marketplace</a></li>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Integrations</a></li>
-        </ul>
-        <ul>
-          <span>Company</span>
-          <br />
-          <li><a href="#">About</a></li>
-          <li><a href="#">Team</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Careers</a></li>
-        </ul>
-        <ul>
-          <span>Connect</span>
-          <br />
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Newsletter</a></li>
-          <li><a href="#">Linkedin</a></li>
-        </ul>
-      </div>
+  </div>
+  <script src="./script/auction-single.js"></script>
+</body>
+<footer>
+  <div id="footer" class="py-3">
+    <div class="foot-space">
+      <ul>
+        <span>Product</span>
+        <br />
+        <li><a href="#">Overview</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Marketplace</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Integrations</a></li>
+      </ul>
+      <ul>
+        <span>Company</span>
+        <br />
+        <li><a href="#">About</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+      <ul>
+        <span>Connect</span>
+        <br />
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Newsletter</a></li>
+        <li><a href="#">Linkedin</a></li>
+      </ul>
     </div>
-  </footer>
+  </div>
+</footer>
+
 </html>

@@ -7,18 +7,52 @@
     <title>Login</title>
   </head>
   <body>
+    <div id="loginFormContainer">
     <div class="login-box">
       <h1>Login</h1>
-      <form action="">
+      <form action="" id="loginForm">
         <label for="email">Email</label>
-        <input type="email" name="email" placeholder="" />
+        <input type="email" name="email" id="loginemail" placeholder="" />
         <label for="password">Password</label>
+        <input type="password" name="password" id="loginPassword" placeholder="" />
+        <input type="submit" value="submit" />
+      </form>
+    </div>
+    <p id="loginMessage"></p>
+    <p class="bottom-2">
+
+
+      Do not have an account? <a href="#" onclick="showSignupForm()">Sign Up Here</a>
+    </p>
+  </div>
+
+    <div class="Signup-container" id="signupFormContainer" style="display:none;">
+      <h1>Sign Up</h1>
+      <h4>It's free and only takes a minute</h4>
+      <form action="" id="signupForm">
+        <label for="name">First Name</label>
+        <input type="text" name="first-name" required placeholder="" />
+        <label for="name">Last Name</label>
+        <input type="text" name="last-name" required placeholder="" />
+        <label for="email">Email</label>
+        <input type="email" name="email" id="signupUseremail" placeholder="" />
+        <label for="password">Password</label>
+        <input type="password" name="password" placeholder="" />
+        <label for="password">Confirm Password</label>
         <input type="password" name="password" placeholder="" />
         <input type="button" value="submit" />
       </form>
-    </div>
-    <p class="bottom-2">
-      Do not have an account? <a href="index.html">Sign Up Here</a>
+      <p id="signupMessage"></p>
+      <p>
+        By clicking the Sign Up button, you agree to our <br />
+        <a href="#">Terms and Conditions</a> and <a href="#">Policy Privacy</a>
+      </p>
+    <p class="bottom">
+      Already have an account?<a href="index2.html">Login Here</a>
+
     </p>
+  </div>
+
+    <script src="./script/login.js"></script>
   </body>
 </html>

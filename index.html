@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="/Group-Project/project/work.css">
     <script src="/Group-Project/script/app.js"></script>
     <link rel="stylesheet" href="/Group-Project/project/category.css">
+    <link rel="stylesheet" href="data.json" />
+    <script src="./script/script.js"></script>
+    <script src="./script/login.js"></script>
+main
   </head>
   <body>
     <header>
@@ -35,7 +39,7 @@
           </span>
           <div class="acc-dropdown">
             <div>
-              <button>SIGN IN</button>
+              <button id="signinbtn">SIGN IN</button>
             </div>
             <div>
               <span>
@@ -131,6 +135,9 @@
               </li>
           </ul>
             <a href="/Group-Project/project/how_it_works.html" id="how" >How it Works</a>
+            <a href="#">Categories</a>
+            <a href="#hiw">How it Works</a>
+main
             <a href="About.html">About us</a>
            </nav>        
           </nav>
@@ -151,22 +158,16 @@
     <div class="wrapper">
       <div class="wrap_flex my-3">
         <div class="first_part_index">
-          <div class="auction_img">
-            <img src="./img/art3.jpg" alt="" />
-          </div>
+          <div class="auction_img" id="main_img"></div>
         </div>
         <div class="second_part_index">
           <div class="content">
-            <p>Art/Painting</p>
-            <h1>Nativity</h1>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi
-              dolor possimus sapiente ex eaque? Possimus mollitia odit sapiente
-              modi labore. Lorem ipsum, dolor sit amet consectetur adipisicing
-              elit. Quidem, placeat?
+            <p id="main_cat"></p>
+            <h1 id="main_name"></h1>
+            <p id="main_story">
             </p>
             <div class="btn-flex">
-              <a class="btn my-1" href="#">Bid Now</a>
+              <a class="btn my-1" href="#" onclick="auctsing()">Bid Now</a>
               <a class="btn my-1" href="#">View Details</a>
             </div>
           </div>
@@ -181,27 +182,11 @@
             <div><p>See more</p></div>
           </div>
           <div id="scroll">
-            <div>
-              <img class="sec2_img" src="./img/benz.jpg" alt="" />
-              <p>Waffle</p>
-              <h5>Waffle with Berries</h5>
-              <h5>6.50</h5>
+            <div onclick="auctsing(); mop(2)" class="sec2_img" id="r1c1">
             </div>
-            <div>
-              <img class="sec2_img" src="./img/art1.jpg" alt="" />
-              <p>Crème Brûlée</p>
-              <h5>Vanilla Bean Crème Brûlée</h5>
-              <h5>7.00</h5>
+            <div class="sec2_img" id="r1c2">
             </div>
-            <div>
-              <img
-                class="sec2_img"
-                src="./img/pexels-steve-1781710.jpg"
-                alt=""
-              />
-              <p>Macaron</p>
-              <h5>Macaron Mix of Five</h5>
-              <h5>8.00</h5>
+            <div class="sec2_img" id="r1c3">
             </div>
           </div>
         </div>
@@ -214,52 +199,20 @@
             <div><p>See more</p></div>
           </div>
           <div id="scroll">
-            <div>
-              <img
-                class="scroll_img"
-                src="./img/pexels-steve-1781710.jpg"
-                alt=""
-              />
-              <p>Waffle</p>
-              <h5>Waffle with Berries</h5>
-              <h5>6.50</h5>
+            <div class="scroll_img" id="r1c4">
             </div>
-            <div>
-              <img
-                class="scroll_img"
-                src="./img/pexels-steve-1781710.jpg"
-                alt=""
-              />
-              <p>Crème Brûlée</p>
-              <h5>Vanilla Bean Crème Brûlée</h5>
-              <h5>7.00</h5>
+            <div class="scroll_img" id="r1c5">
             </div>
-            <div>
-              <img
-                class="scroll_img"
-                src="./img/pexels-steve-1781710.jpg"
-                alt=""
-              />
-              <p>Macaron</p>
-              <h5>Macaron Mix of Five</h5>
-              <h5>8.00</h5>
+            <div class="scroll_img" id="r1c6">
             </div>
-            <div>
-              <img
-                class="scroll_img"
-                src="./img/pexels-steve-1781710.jpg"
-                alt=""
-              />
-              <p>Macaron</p>
-              <h5>Macaron Mix of Five</h5>
-              <h5>8.00</h5>
+            <div class="scroll_img" id="r1c7">
             </div>
           </div>
         </div>
       </div>
 
       <!-- Section 4 -->
-      <div class="my-8">
+      <div class="my-8" id="hiw">
         <h1>How it works</h1>
         <div class="steps">
           <div class="step">
