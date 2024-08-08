@@ -19,7 +19,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     if (user) {
         loginMessage.style.color = 'green';
         loginMessage.textContent = 'Login successful!';
-        showProfile(user);
+        showProfile();
     } else {
         loginMessage.style.color = 'red';
         loginMessage.textContent = 'Invalid email or password.';
@@ -61,7 +61,9 @@ function showLoginForm() {
     document.getElementById('loginFormContainer').style.display = 'block';
 }
 
-function showProfile(user) {
+function showProfile() {
     window.location.href = 'index.html';
-    document.getElementById('profileUsername').textContent = `Username: ${user.username}`;
+    document.querySelector(".acc-dropdown").style.display = "none";
+    document.querySelector(".login-dropdown").style.display = "block";
+    console.log(omo);
 }
