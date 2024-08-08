@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   margin: 0px;
   padding: 0px;
@@ -96,11 +97,9 @@ hr {
 
 .bg-primary {
   color: hsl(0, 0%, 100%);
-  background-image: linear-gradient(
-      to right,
+  background-image: linear-gradient(to right,
       hsl(13, 100%, 72%),
-      hsl(353, 100%, 62%)
-    ),
+      hsl(353, 100%, 62%)),
     url(images/bg-pattern-intro-desktop.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -117,15 +116,19 @@ hr {
 .my-1 {
   margin: 1rem 0;
 }
+
 .my-2 {
   margin: 2rem 0;
 }
+
 .my-3 {
   margin: 3rem 0;
 }
+
 .my-4 {
   margin: 4rem 0;
 }
+
 .my-8 {
   margin: 8rem 0;
 }
@@ -134,18 +137,23 @@ hr {
 .py-1 {
   padding: 10px 0;
 }
+
 .py-2 {
   padding: 20px 0;
 }
+
 .py-3 {
   padding: 50px 0;
 }
+
 .py-sec-one {
   padding: 8rem 0rem 1rem 7rem;
 }
+
 .py-sec-two {
   padding: 5rem 0rem 5rem 0rem;
 }
+
 .py-sec-three {
   padding: 8rem 7rem 6rem 0rem;
 }
@@ -252,12 +260,12 @@ hr {
   margin-right: 5px;
 }
 
-.categories{
+.categories {
   background-color: #5084c1;
   color: white;
 }
 
-.cat-pad{
+.cat-pad {
   padding: 0 7rem;
 }
 
@@ -363,6 +371,7 @@ hr {
   flex-direction: row;
   justify-content: space-between;
 }
+
 /* Auctions */
 .auction {
   font-size: 3rem;
@@ -441,6 +450,10 @@ hr {
   font-family: "Nunito";
   font-size: 18.72px;
   outline: none;
+}
+
+.hidden {
+  display: none;
 }
 
 /* Profile */
