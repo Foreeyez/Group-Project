@@ -1,97 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style/style.css" />
     <title>Place an Item for Auction</title>
+    <link rel="stylesheet" href="/Group-Project/project/how_it_works.html">
+    <link rel="stylesheet" href="/Group-Project/project/work.css">
   </head>
+=======
+ main
 
-  <body>
-    <header>
-      <div class="main">
-        <img class="logo" src="./img/LOGO.jpg" alt="" />
-        <div class="inse">
-          <input type="search" placeholder="Search and place the highest bid" />
-          <button>Search</button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style/style.css" />
+  <title>Place an Item for Auction</title>
+</head>
+
+<body>
+  <header>
+    <div class="main">
+      <img class="logo" src="./img/LOGO.jpg" alt="" />
+      <div class="inse">
+        <input type="search" placeholder="Search and place the highest bid" />
+        <button>Search</button>
+      </div>
+      <span class="shuu">
+        <span class="boo">
+          <img src="./img/person_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+          <!-- <hr> -->
+          <p>Account</p>
+          <img src="./img/keyboard_arrow_down_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+          <!-- <img src="./img/keyboard_arrow_up_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt=""> -->
+        </span>
+        <div class="acc-dropdown">
+          <div>
+            <button>SIGN IN</button>
+          </div>
+          <div>
+            <span>
+              <img src="./img/person_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+              <p>My Account</p>
+            </span>
+            <span>
+              <img src="./img/shopping_cart_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+              <p>My Bids</p>
+            </span>
+            <span>
+              <img src="./img/favorite_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+              <p>Saved Items</p>
+            </span>
+          </div>
         </div>
-        <span class="shuu">
-          <span class="boo">
-            <img
-              src="./img/person_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
-              alt=""
-            />
-            <!-- <hr> -->
-            <p>Account</p>
-            <img
-              src="./img/keyboard_arrow_down_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
-              alt=""
-            />
-            <!-- <img src="./img/keyboard_arrow_up_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt=""> -->
-          </span>
-          <div class="acc-dropdown">
-            <div>
-              <button>SIGN IN</button>
-            </div>
-            <div>
-              <span>
-                <img
-                  src="./img/person_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
-                  alt=""
-                />
-                <p>My Account</p>
-              </span>
-              <span>
-                <img
-                  src="./img/shopping_cart_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
-                  alt=""
-                />
-                <p>My Bids</p>
-              </span>
-              <span>
-                <img
-                  src="./img/favorite_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
-                  alt=""
-                />
-                <p>Saved Items</p>
-              </span>
-            </div>
+        <div class="login-dropdown">
+          <div>
+            <span>
+              <img src="./img/person_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+              <a href="profile.html">My Account</a>
+            </span>
+            <span>
+              <img src="./img/shopping_cart_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+              <a href="#">My Bids</a>
+            </span>
+            <span>
+              <img src="./img/favorite_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+              <a href="#">Saved Items</a>
+            </span>
+            <span>
+              <img src="./img/mail_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+              <a href="#">Inbox</a>
+            </span>
           </div>
-          <div class="login-dropdown">
-            <div>
-              <span>
-                <img
-                  src="./img/person_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
-                  alt=""
-                />
-                <a href="profile.html">My Account</a>
-              </span>
-              <span>
-                <img
-                  src="./img/shopping_cart_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
-                  alt=""
-                />
-                <a href="#">My Bids</a>
-              </span>
-              <span>
-                <img
-                  src="./img/favorite_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
-                  alt=""
-                />
-                <a href="#">Saved Items</a>
-              </span>
-              <span>
-                <img
-                  src="./img/mail_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
-                  alt=""
-                />
-                <a href="#">Inbox</a>
-              </span>
-            </div>
-            <div>
-              <a href="#"> <button id="signoutbtn">Sign Out</button></a>
-            </div>
+          <div>
+            <a href="#"> <button id="signoutbtn">Sign Out</button></a>
           </div>
+
         </span>
       </div>
       <div class="categories">
@@ -100,76 +85,91 @@
             <a href="index.html">Home</a>
             <a href="auctions.html">Auctions</a>
             <a href="#">Auctioneers</a>
-            <a href="#">Categories</a>
-            <a href="#">How it Works</a>
+           <a href="#">Categories</a>
+            <a href="/Group-Project/project/how_it_works.html">How it Works</a>
             <a href="About.html">About us</a>
           </nav>
+        </nav>
+ main
         </div>
-      </div>
-    </header>
-
-    <!-- Content -->
-    <main>
-      <section class="place-item-form">
-        <h2>Place an Item for Auction</h2>
-        <form id="auction-item-form">
-          <label for="item-name">Item Name:</label>
-          <input type="text" id="item-name" name="item-name" required />
-
-          <label for="item-description">Item Description:</label>
-          <textarea
-            id="item-description"
-            name="item-description"
-            required
-          ></textarea>
-
-          <label for="item-picture">Item Picture:</label>
-          <input
-            type="file"
-            id="item-picture"
-            name="item-picture"
-            accept="image/*"
-            required
-          />
-
-          <label for="starting-bid">Starting Bid:</label>
-          <input type="number" id="starting-bid" name="starting-bid" required />
-
-          <button type="submit">Submit</button>
-        </form>
-      </section>
-    </main>
-
-    <script src="./script/addauction.js"></script>
-  </body>
-  <footer>
-    <div id="footer" class="py-3">
-      <div class="foot-space">
-        <ul>
-          <span>Product</span>
-          <br />
-          <li><a href="#">Overview</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Marketplace</a></li>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Integrations</a></li>
-        </ul>
-        <ul>
-          <span>Company</span>
-          <br />
-          <li><a href="#">About</a></li>
-          <li><a href="#">Team</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Careers</a></li>
-        </ul>
-        <ul>
-          <span>Connect</span>
-          <br />
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Newsletter</a></li>
-          <li><a href="#">Linkedin</a></li>
-        </ul>
+      </span>
+    </div>
+    <div class="categories">
+      <div class="cat-pad">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="auctions.html">Auctions</a>
+          <a href="#">Auctioneers</a>
+          <a href="#">Categories</a>
+          <a href="#">How it Works</a>
+          <a href="About.html">About us</a>
+        </nav>
       </div>
     </div>
-  </footer>
+  </header>
+
+  <!-- Content -->
+  <main>
+    <section class="place-item-form">
+      <h2>Place an Item for Auction</h2>
+      <form id="auction-item-form">
+        <label for="item-picture">Item Picture:</label>
+        <input type="file" id="item-picture" name="item-picture" accept="image/*" required />
+
+        <label for="item-about">Item About:</label>
+        <textarea id="item-about" name="item-about" required></textarea>
+
+        <label for="item-category">Item Category:</label>
+        <input type="text" id="item-category" name="item-category" required />
+
+        <label for="item-name">Item Name:</label>
+        <input type="text" id="item-name" name="item-name" required />
+
+        <label for="item-description">Item Description:</label>
+        <textarea id="item-description" name="item-description" required></textarea>
+
+        <label for="estimated-bid">Estimated Bid:</label>
+        <input type="number" id="estimated-bid" name="estimated-bid" required />
+
+        <label for="starting-bid">Starting Bid:</label>
+        <input type="number" id="starting-bid" name="starting-bid" required />
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="./script/addauction.js"></script>
+</body>
+<footer>
+  <div id="footer" class="py-3">
+    <div class="foot-space">
+      <ul>
+        <span>Product</span>
+        <br />
+        <li><a href="#">Overview</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Marketplace</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Integrations</a></li>
+      </ul>
+      <ul>
+        <span>Company</span>
+        <br />
+        <li><a href="#">About</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+      <ul>
+        <span>Connect</span>
+        <br />
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Newsletter</a></li>
+        <li><a href="#">Linkedin</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
 </html>

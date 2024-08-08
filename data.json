@@ -1,0 +1,136 @@
+[
+{
+      "id": "1",
+      "name": "Vintage Rolex Watch",
+      "description": "A classic vintage Rolex watch in excellent condition with original box.",
+      "startingBid": 5000,
+      "currentBid": 5200,
+      "bidIncrement": 100,
+      "endTime": "2024-08-10T15:00:00Z",
+      "seller": "john_doe",
+      "category": "Luxury Watches",
+      "images": "../img/benz.jpg",
+      "story": "This Rolex watch was originally purchased in 1965 by a prominent businessman in New York. It has been meticulously maintained over the years, becoming a cherished heirloom passed down through generations. Its timeless elegance and craftsmanship make it a coveted piece for collectors and enthusiasts alike."
+    },
+    {
+      "id": "2",
+      "name": "Nativity",
+      "description": "Battle of Bunker Hill New York Campaign Battle of Trenton Battle of Princeton Battle of Saratoga",
+      "startingBid": 300,
+      "currentBid": 350,
+      "bidIncrement": 20,
+      "endTime": "2024-08-12T18:00:00Z",
+      "seller": "jane_smith",
+      "category": {
+        "primary":"Art",
+        "secondary":"Painting"
+      },
+      "images": "https://res.cloudinary.com/drq6rby2o/image/upload/v1722949175/art3_deluzp.jpg",
+      "story": "The 6th Massachusetts Regiment also known as the 4th Continental Regiment was raised on April 23, 1775 under Colonel John Nixon outside of Boston, Massachusetts. "
+    },
+    {
+      "id": "3",
+      "name": "Rare Comic Book Collection",
+      "description": "A collection of rare comic books from the 1980s, including first editions.",
+      "startingBid": 2000,
+      "currentBid": 2200,
+      "bidIncrement": 50,
+      "endTime": "2024-08-15T12:00:00Z",
+      "seller": "comic_fan",
+      "category": "Comics",
+      "images": "../img/lecklace1.jpg",
+      "story": "This collection was amassed by a dedicated fan during the golden age of comic books. Each issue is a first edition and includes rare variants. The collection has been carefully preserved and holds a special place in the hearts of collectors due to its historical significance and the beloved characters it features."
+    },
+    {
+      "id": "4",
+      "name": "Modern Art Painting",
+      "description": "A stunning modern art painting by contemporary artist Alex Roe.",
+      "startingBid": 1500,
+      "currentBid": 1600,
+      "bidIncrement": 100,
+      "endTime": "2024-08-18T21:00:00Z",
+      "seller": "art_lover",
+      "category": "Art",
+      "images": "../img/pexels-steve-1183992.jpg",
+      "story": "Created by the celebrated artist Alex Roe, this painting embodies the bold and innovative spirit of contemporary art. It was first exhibited at a major gallery in Paris and has since become a favorite among modern art enthusiasts. Its vibrant colors and abstract form tell a story of transformation and creativity."
+    },
+    {
+      "id": "5",
+      "name": "High-End Gaming Laptop",
+      "description": "A powerful gaming laptop with the latest specifications, including a high-resolution screen.",
+      "startingBid": 1200,
+      "currentBid": 1300,
+      "bidIncrement": 50,
+      "endTime": "2024-08-20T10:00:00Z",
+      "seller": "tech_guru",
+      "category": "Electronics",
+      "images": "../img/benz.jpg",
+      "story": "This gaming laptop was designed for high-performance gaming and has been used by a professional gamer for competitive tournaments. With top-of-the-line specs and a sleek design, it has proven to be a formidable tool for both gaming and creative tasks, offering exceptional speed and graphics."
+    },
+    {
+      "id": "6",
+      "name": "Vintage Vinyl Record Collection",
+      "description": "A collection of vintage vinyl records from the 1960s and 1970s, including rare editions.",
+      "startingBid": 400,
+      "currentBid": 450,
+      "bidIncrement": 25,
+      "endTime": "2024-08-25T14:00:00Z",
+      "seller": "music_enthusiast",
+      "category": "Music",
+      "images": "../img/benz.jpg",
+      "story": "This collection features iconic vinyl records from the golden age of music. Collected over decades, it includes rare editions from legendary artists and bands. Each record carries a piece of musical history and reflects the rich tapestry of the 60s and 70s music scene."
+    },
+    {
+      "id": "7",
+      "name": "Vintage Vinyl Record Collection",
+      "description": "A collection of vintage vinyl records from the 1960s and 1970s, including rare editions.",
+      "startingBid": 400,
+      "currentBid": 450,
+      "bidIncrement": 25,
+      "endTime": "2024-08-25T14:00:00Z",
+      "seller": "music_enthusiast",
+      "category": "Music",
+      "images": "../img/benz.jpg",
+      "story": "This collection features iconic vinyl records from the golden age of music. Collected over decades, it includes rare editions from legendary artists and bands. Each record carries a piece of musical history and reflects the rich tapestry of the 60s and 70s music scene."
+    },
+    {
+      "id": "8",
+      "name": "Vintage Vinyl Record Collection",
+      "description": "A collection of vintage vinyl records from the 1960s and 1970s, including rare editions.",
+      "startingBid": 400,
+      "currentBid": 450,
+      "bidIncrement": 25,
+      "endTime": "2024-08-25T14:00:00Z",
+      "seller": "music_enthusiast",
+      "category": "Music",
+      "images": "../img/benz.jpg",
+      "story": "This collection features iconic vinyl records from the golden age of music. Collected over decades, it includes rare editions from legendary artists and bands. Each record carries a piece of musical history and reflects the rich tapestry of the 60s and 70s music scene."
+    },
+    {
+      "id": "9",
+      "name": "Vintage Vinyl Record Collection",
+      "description": "A collection of vintage vinyl records from the 1960s and 1970s, including rare editions.",
+      "startingBid": 400,
+      "currentBid": 450,
+      "bidIncrement": 25,
+      "endTime": "2024-08-25T14:00:00Z",
+      "seller": "music_enthusiast",
+      "category": "Music",
+      "images": "../img/benz.jpg",
+      "story": "This collection features iconic vinyl records from the golden age of music. Collected over decades, it includes rare editions from legendary artists and bands. Each record carries a piece of musical history and reflects the rich tapestry of the 60s and 70s music scene."
+    },
+    {
+      "id": "10",
+      "name": "Vintage Vinyl Record Collection",
+      "description": "A collection of vintage vinyl records from the 1960s and 1970s, including rare editions.",
+      "startingBid": 400,
+      "currentBid": 450,
+      "bidIncrement": 25,
+      "endTime": "2024-08-25T14:00:00Z",
+      "seller": "music_enthusiast",
+      "category": "Music",
+      "images": "../img/benz.jpg",
+      "story": "This collection features iconic vinyl records from the golden age of music. Collected over decades, it includes rare editions from legendary artists and bands. Each record carries a piece of musical history and reflects the rich tapestry of the 60s and 70s music scene."
+    }
+  ]
+
