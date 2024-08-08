@@ -740,10 +740,3 @@ footer {
 #footer ul li a {
   color: hsl(240, 2%, 79%);
 }
-#how{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  
-  
-}
