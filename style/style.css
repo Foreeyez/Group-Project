@@ -311,12 +311,12 @@ hr {
   scrollbar-width: none;
 }
 
-.sec2_img {
+.sec2_img img{
   width: 500px;
   height: 300px;
 }
 
-.scroll_img {
+.scroll_img img{
   width: 300px;
 }
 
@@ -396,9 +396,10 @@ hr {
   width: 400px;
 }
 
-.grid_img {
+.grid_img img{
   border: 3px solid rgba(25, 26, 27, 0.415);
-  width: 100%;
+  width: 500px;
+  height: 250px;
 }
 
 .abbs {
@@ -751,4 +752,210 @@ footer {
 
 #footer ul li a {
   color: hsl(240, 2%, 79%);
+}
+
+/* Media Query for screen sizes between 360px and 870px */
+@media screen and (min-width: 360px) and (max-width: 870px) {
+
+  /* General Styles */
+  .wrapper {
+    padding: 0 4rem;
+  }
+
+  .text-primary {
+    color: #f7c08a;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 8px 16px 4px;
+  }
+
+  .btn-light:hover {
+    background: #f4f4f4;
+    color: hsl(353, 100%, 62%);
+  }
+
+  .btn-trans:hover {
+    background: hsl(355, 100%, 74%);
+    color: hsl(0, 0%, 100%);
+  }
+
+  .btn-light {
+    background: none;
+    color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 0%, 100%);
+  }
+
+  .btn-trans {
+    background: #f4f4f4;
+    color: hsl(353, 100%, 62%);
+  }
+
+  .login-b {
+    background: none;
+    color: hsl(0, 0%, 100%);
+  }
+
+  .bg-primary {
+    background-image: linear-gradient(
+        to right,
+        hsl(13, 100%, 72%),
+        hsl(353, 100%, 62%)
+      ),
+      url(images/bg-pattern-intro-desktop.svg);
+  }
+
+  .l-heading {
+    font-size: 32px;
+  }
+
+  .my-1, .my-2, .my-3, .my-4, .my-8 {
+    margin: 0.5rem 0;
+  }
+
+  .py-1, .py-2, .py-3 {
+    padding: 10px 0;
+  }
+
+  .py-sec-one, .py-sec-two, .py-sec-three {
+    padding: 5rem 4rem;
+  }
+
+  .main {
+    padding: 10px 15px;
+  }
+
+  .main .logo {
+    height: 80px;
+  }
+
+  .main img {
+    height: 15px;
+  }
+
+  .inse {
+    width: 40%;
+  }
+
+  .main .shuu {
+    display: none;
+  }
+
+  .categories {
+    background-color: #5084c1;
+  }
+
+  .cat-pad {
+    padding: 0 4rem;
+  }
+
+  .categories nav a {
+    margin: 0 10px;
+    font-size: 14px;
+  }
+
+  .btn-flex {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .first_part_index, .second_part_index {
+    width: 100%;
+  }
+
+  #scroll {
+    overflow-x: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(44, 41, 41, 0.5) transparent;
+  }
+
+  .steps {
+    flex-direction: column;
+  }
+
+  .step img {
+    width: 150px;
+  }
+
+  .auctionees {
+    height: auto;
+    padding: 20px;
+  }
+
+  .sec-5-flex {
+    flex-direction: column;
+  }
+
+  #grid-container {
+    flex-direction: column;
+  }
+
+  #grid-container img {
+    width: 100%;
+  }
+
+  .wrap_flex {
+    flex-direction: column;
+  }
+
+  .first_part {
+    width: 100%;
+  }
+
+  .second_part {
+    width: 100%;
+  }
+
+  .auction_img img {
+    width: 100%;
+  }
+
+  .profile-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-info .profile-picture {
+    width: 80px;
+    height: 80px;
+  }
+
+  .profile-info .info h2 {
+    font-size: 1.5rem;
+  }
+
+  .profile-info .info p {
+    font-size: 1rem;
+  }
+
+  .modal-content {
+    width: 90%;
+  }
+
+  .place-item-form {
+    padding: 1rem;
+  }
+
+  .place-item-form h2 {
+    font-size: 1.5rem;
+  }
+
+  .team-member img {
+    width: 80px;
+    height: 80px;
+  }
+
+  /* Adjust footer styles */
+  footer {
+    padding: 1rem;
+  }
+
+  #footer {
+    flex-direction: column;
+  }
+
+  #footer ul {
+    flex-direction: column;
+  }
 }

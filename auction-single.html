@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./script/header.js"></script>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="data.json" />
+    <script src="./script/script.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <script src="./script/header.js"></script>
-  <link rel="stylesheet" href="./style/style.css" />
-</head>
+
+
 
 <body>
   <header>
@@ -43,6 +47,7 @@
               <p>Saved Items</p>
             </span>
           </div>
+
         </div>
         <div class="login-dropdown">
           <div>
@@ -82,84 +87,43 @@
       </div>
     </div>
   </header>
-
-  <!-- Content area -->
-  <div class="wrap_flex my-3 wrapper">
-    <div class="first_part">
-      <div class="auction_img">
-        <img src="./img/pexels-pixabay-159862.jpg" alt="" />
+    <!-- Content area -->
+    <div class="wrap_flex my-3 wrapper">
+      <div class="first_part">
+        <div class="auction_img" id="single_img">
+          <!-- <img src="./img/pexels-pixabay-159862.jpg" alt="" /> -->
+        </div>
+        <p id="single_story">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi dolor
+          possimus sapiente ex eaque? Possimus mollitia odit sapiente modi
+          labore. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Quidem, placeat?
+        </p>
       </div>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi dolor
-        possimus sapiente ex eaque? Possimus mollitia odit sapiente modi
-        labore. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-        Quidem, placeat?
-      </p>
-    </div>
-    <div class="second_part">
-      <div class="content">
-        <p>Art/Painting</p>
-        <h1>Nativity</h1>
-        <div>
+      <div class="second_part">
+        <div class="content">
+          <p id="single_cat"></p>
+          <h1 id="single_name"></h1>
           <p>Four offset lithographs printed in colours</p>
           <p>27 1/5 × 18 9/10 in | 69 × 48 cm</p>
           <p>From an unknown editions</p>
-        </div>
-        <hr />
-        <h3>Estimated value: £800–£1,200</h3>
-        <div class="flex_cont">
-          <div>
-            <h2>Current bid</h2>
+          <hr />
+          <h3 id="start_b"></h3>
+          <div class="flex_cont">
+            <div>
+              <h2>Current bid</h2>
+            </div>
+            <div>
+              <h2 id="current_b"></h2>
+            </div>
           </div>
-          <div>
-            <h2>$800</h2>
-          </div>
-        </div>
-        <p>1 bid</p>
-        <p>This auction has a buyer’s premium.</p>
-        <p>Shipping, taxes, and additional fees may apply.</p>
-        <hr />
-        <h3>Place max bid</h3>
-        <input class="input_area" type="number" />
-        <a class="btn my-1" href="#">Bid</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- New Content -->
-  <div class="wrap_flex my-3 wrapper">
-    <div class="first_part new-content hidden">
-      <div class="first_part">
-        <div class="auction_img">
-          <img src="" alt="New Auction Item" />
-        </div>
-        <p></p>
-      </div>
-    </div>
-    <div class="second_part new-content hidden">
-      <div class="content">
-        <p></p>
-        <h1></h1>
-        <div>
-          <p></p>
-        </div>
-        <hr />
-        <h3></h3>
-        <div class="flex_cont">
-          <div>
-            <h2>Starting bid</h2>
-          </div>
-          <div>
-            <h2></h2>
-          </div>
-        </div>
-        <p></p>
-        <p>This auction has a buyer’s premium.</p>
-        <p>Shipping, taxes, and additional fees may apply.</p>
-        <hr />
-        <h3>Place max bid</h3>
-        <input class="input_area" type="number" />
-        <a class="btn my-1" href="#">Bid</a>
+          <p>1 bid</p>
+          <p id="single_end_time"></p>
+          <p>Shipping, taxes, and additional fees may apply.</p>
+          <hr />
+          <h3>Place max bid</h3>
+          <input class="input_area" type="number" id="bid_value" />
+          <a class="btn my-1" href="#" onclick="logoo()">Bid</a>
       </div>
     </div>
   </div>
