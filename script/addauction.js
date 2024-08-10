@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
         newData: true, // Flag to indicate new data has been submitted
       };
 
+      console.log("Saving to localStorage:", itemData); // Debugging line
       localStorage.setItem("auctionItemData", JSON.stringify(itemData));
       window.location.href = "auction-single.html";
     };

@@ -1,10 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
   const itemData = JSON.parse(localStorage.getItem("auctionItemData"));
+  console.log("Loaded from localStorage:", itemData); // Debugging line
 
   if (itemData && itemData.newData) {
-    document.querySelector(".wrap_flex").classList.add("hidden"); // Hide original content
+    document.querySelector(".wrap_flex").classList.add("hidden");
     const newContentElems = document.querySelectorAll(".new-content");
-    newContentElems.forEach((elem) => elem.classList.remove("hidden")); // Show new content
+    newContentElems.forEach((elem) => elem.classList.remove("hidden"));
 
     document.querySelector(".first_part.new-content .auction_img img").src =
       itemData.itemPicture;
@@ -27,8 +28,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     localStorage.removeItem("auctionItemData");
   } else {
-    document.querySelector(".wrap_flex").classList.remove("hidden"); // Show original content
+    document.querySelector(".wrap_flex").classList.remove("hidden");
     const newContentElems = document.querySelectorAll(".new-content");
-    newContentElems.forEach((elem) => elem.classList.add("hidden")); // Hide new content
+    newContentElems.forEach((elem) => elem.classList.add("hidden"));
   }
 });

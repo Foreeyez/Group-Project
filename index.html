@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="./script/header.js"></script>
-    <link rel="stylesheet" href="./style/style.css" />
-    <link rel="stylesheet" href="/Group-Project/project/how_it_works.html">
-    <link rel="stylesheet" href="/Group-Project/project/work.css">
-    <script src="/Group-Project/script/app.js"></script>
-    <link rel="stylesheet" href="/Group-Project/project/category.css">
-    <link rel="stylesheet" href="data.json" />
-    <script src="./script/script.js"></script>
+    <script src="./script/app.js"></script>
+    <!-- <script src="./script/script.js"></script> -->
+    <script src="./script/try.js"></script>
     <script src="./script/login.js"></script>
-main
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="data.json" />
+    <link rel="stylesheet" href="./project/categories.html" />
+    <link rel="stylesheet" href="./project/category.css" />
   </head>
   <body>
     <header>
       <div class="main">
-        <img class="logo" src="./img/LOGO.jpg" alt="" />
+        <a href="index.html"
+          ><img class="logo" src="./img/LOGO.jpg" alt=""
+        /></a>
         <div class="inse">
           <input type="search" placeholder="Search and place the highest bid" />
           <button>Search</button>
@@ -39,7 +40,7 @@ main
           </span>
           <div class="acc-dropdown">
             <div>
-              <button id="signinbtn">SIGN IN</button>
+              <a href="login.html"><button>SIGN IN</button></a>
             </div>
             <div>
               <span>
@@ -47,7 +48,7 @@ main
                   src="./img/person_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
                   alt=""
                 />
-                <p>My Account</p>
+                <a href="profile.html"><p>My Account</p></a>
               </span>
               <span>
                 <img
@@ -72,7 +73,7 @@ main
                   src="./img/person_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
                   alt=""
                 />
-                <p>My Account</p>
+                <a href="profile.html"><p>My Account</p></a>
               </span>
               <span>
                 <img
@@ -106,48 +107,59 @@ main
         <div class="cat-pad">
           <nav>
             <nav class="categories-nav">
-            <a href="index.html">Home</a>
-            <a href="auctions.html">Auctions</a>
-            <a href="#">Auctioneers</a>
-            <ul>
-              <li class="category">
+              <a href="index.html">Home</a>
+              <a href="auctions.html">Auctions</a>
+              <a href="Auctioneers.html">Auctioneers</a>
+              <ul>
+                <li class="category">
                   <a href="#" class="category-toggle">Category</a>
                   <ul class="subcategories">
-                      <li>
-                          <a href="#" class="subcategory-item"
-                             data-title="Cars"
-                             data-images="/Group-Project/project/download.jpg,/Group-Project/project/download.jpg,/Group-Project/project/download.jpg,/Group-Project/project/download.jpg,/Group-Project/project/download.jpg"
-                             data-image-titles="Benz A, Benz B, Benz C, Benz D, Benz E">Cars</a>
-                      </li>
-                      <li>
-                          <a href="#" class="subcategory-item"
-                             data-title="Artwork"
-                             data-images="images (3).jpg,images (3).jpg,images (3).jpg,images (3).jpg,images (3).jpg"
-                             data-image-titles="Artwork 1, Artwork 2, Artwork 3, Artwork 4, Artwork 5">Artwork</a>
-                      </li>
-                      <li>
-                          <a href="#" class="subcategory-item"
-                             data-title="House"
-                             data-images="images (4).jpg,images (4).jpg,images (4).jpg,images (4).jpg,images (4).jpg, images (4).jpg"
-                             data-image-titles="House A, House B, House C, House D, House E, House F">House</a>
-                      </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="subcategory-item"
+                        data-title="Cars"
+                        data-images="/Group-Project/project/download.jpg,/Group-Project/project/download.jpg,/Group-Project/project/download.jpg,/Group-Project/project/download.jpg,/Group-Project/project/download.jpg"
+                        data-image-titles="Benz A, Benz B, Benz C, Benz D, Benz E"
+                        >Cars</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="subcategory-item"
+                        data-title="Artwork"
+                        data-images="images (3).jpg,images (3).jpg,images (3).jpg,images (3).jpg,images (3).jpg"
+                        data-image-titles="Artwork 1, Artwork 2, Artwork 3, Artwork 4, Artwork 5"
+                        >Artwork</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="subcategory-item"
+                        data-title="House"
+                        data-images="images (4).jpg,images (4).jpg,images (4).jpg,images (4).jpg,images (4).jpg, images (4).jpg"
+                        data-image-titles="House A, House B, House C, House D, House E, House F"
+                        >House</a
+                      >
+                    </li>
                   </ul>
-              </li>
-          </ul>
-            <a href="/Group-Project/project/how_it_works.html" id="how" >How it Works</a>
-            <a href="#">Categories</a>
-            <a href="#hiw">How it Works</a>
-main
-            <a href="About.html">About us</a>
-           </nav>        
+                </li>
+              </ul>
+
+              <a href="#hiw">How it Works</a>
+
+              <a href="About.html">About us</a>
+            </nav>
           </nav>
-          <!-- Modal for full-page view --> 
+          <!-- Modal for full-page view -->
           <div id="image-modal" class="modal">
             <span class="close">&times;</span>
             <div class="modal-content">
-                <div id="modal-images" class="modal-inner"></div>
-                <button class="modal-prev">❮</button>
-                <button class="modal-next">❯</button>
+              <div id="modal-images" class="modal-inner"></div>
+              <button class="modal-prev">❮</button>
+              <button class="modal-next">❯</button>
             </div>
           </div>
         </div>
@@ -164,10 +176,9 @@ main
           <div class="content">
             <p id="main_cat"></p>
             <h1 id="main_name"></h1>
-            <p id="main_story">
-            </p>
+            <p id="main_story"></p>
             <div class="btn-flex">
-              <a class="btn my-1" href="#" onclick="auctsing()">Bid Now</a>
+              <a class="btn my-1" href="#" id="bid_n" data-id="2">Bid Now</a>
               <a class="btn my-1" href="#">View Details</a>
             </div>
           </div>
@@ -182,12 +193,10 @@ main
             <div><p>See more</p></div>
           </div>
           <div id="scroll">
-            <div onclick="auctsing(); mop(2)" class="sec2_img" id="r1c1">
-            </div>
-            <div class="sec2_img" id="r1c2">
-            </div>
-            <div class="sec2_img" id="r1c3">
-            </div>
+            
+            <!-- <div class="sec2_img" id="r1c1"></div>
+            <div class="sec2_img" id="r1c2"></div>
+            <div class="sec2_img" id="r1c3"></div> -->
           </div>
         </div>
       </div>
@@ -198,15 +207,11 @@ main
             <div><h1>Explore items</h1></div>
             <div><p>See more</p></div>
           </div>
-          <div id="scroll">
-            <div class="scroll_img" id="r1c4">
-            </div>
-            <div class="scroll_img" id="r1c5">
-            </div>
-            <div class="scroll_img" id="r1c6">
-            </div>
-            <div class="scroll_img" id="r1c7">
-            </div>
+          <div id="scroll2">
+            <!-- <div class="scroll_img" id="r1c4"></div>
+            <div class="scroll_img" id="r1c5"></div>
+            <div class="scroll_img" id="r1c6"></div>
+            <div class="scroll_img" id="r1c7"></div> -->
           </div>
         </div>
       </div>
