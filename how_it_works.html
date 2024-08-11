@@ -1,191 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How It Works</title>
-    <link rel="stylesheet" href="./project/work.css">
-    <script src="./script/header.js"></script>
-    <link rel="stylesheet" href="./style/style.css" />
-    <link rel="stylesheet" href="./project/categories.html">
-    <link rel="stylesheet" href="./project/category.css">
-    <link rel="stylesheet" href="./project/how_it_works.html">
-    <script src="./script/app.js"></script>
-    <script src="./script/script2.js"></script>
-</head>
-<body>
-    <header>
-        <div class="main">
-          <a href="index.html"><img class="logo" src="./img/LOGO.jpg" alt="" /></a>
-          <div class="inse">
-            <input type="search" placeholder="Search and place the highest bid" />
-            <button>Search</button>
-          </div>
-          <span class="shuu">
-            <span class="boo">
-              <img
-                src="./img/person_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
-                alt=""
-              />
-              <!-- <hr> -->
-              <p>Account</p>
-              <img
-                src="./img/keyboard_arrow_down_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
-                alt=""
-              />
-              <!-- <img src="./img/keyboard_arrow_up_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt=""> -->
-            </span>
-            <div class="acc-dropdown">
-              <div>
-                <a href="login.html"><button>SIGN IN</button></a>
-              </div>
-              <div>
-                <span>
-                  <img
-                    src="./img/person_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
-                    alt=""
-                  />
-                  <p>My Account</p>
-                </span>
-                <span>
-                  <img
-                    src="./img/shopping_cart_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
-                    alt=""
-                  />
-                  <p>My Bids</p>
-                </span>
-                <span>
-                  <img
-                    src="./img/favorite_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
-                    alt=""
-                  />
-                  <p>Saved Items</p>
-                </span>
-              </div>
-            </div>
-            <div class="login-dropdown">
-              <div>
-                <span>
-                  <img
-                    src="./img/person_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
-                    alt=""
-                  />
-                  <p>My Account</p>
-                </span>
-                <span>
-                  <img
-                    src="./img/shopping_cart_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
-                    alt=""
-                  />
-                  <p>My Bids</p>
-                </span>
-                <span>
-                  <img
-                    src="./img/favorite_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
-                    alt=""
-                  />
-                  <p>Saved Items</p>
-                </span>
-                <span>
-                  <img
-                    src="./img/mail_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
-                    alt=""
-                  />
-                  <p>Inbox</p>
-                </span>
-              </div>
-              <div>
-                <button id="signoutbtn">Sign Out</button>
-              </div>
-            </div>
-          </span>
-        </div>
-        <div class="categories">
-          <div class="cat-pad">
-            <nav>
-              <nav class="categories-nav">
-              <a href="index.html">Home</a>
-              <a href="auctions.html">Auctions</a>
-              <a href="Auctioneers.html">Auctioneers</a>
-              <ul>
-                <li class="category">
-                    <a href="#" class="category-toggle">Category</a>
-                    <ul class="subcategories">
-                        <li>
-                            <a href="#" class="subcategory-item"
-                               data-title="Cars"
-                               data-images="./project/download.jpg,./project/download.jpg,./project/download.jpg,./project/download.jpg,./project/download.jpg"
-                               data-image-titles="Benz A, Benz B, Benz C, Benz D, Benz E">Cars</a>
-                        </li>
-                        <li>
-                            <a href="#" class="subcategory-item"
-                               data-title="Artwork"
-                               data-images="images (3).jpg,images (3).jpg,images (3).jpg,images (3).jpg,images (3).jpg"
-                               data-image-titles="Artwork 1, Artwork 2, Artwork 3, Artwork 4, Artwork 5">Artwork</a>
-                        </li>
-                        <li>
-                            <a href="#" class="subcategory-item"
-                               data-title="House"
-                               data-images="images (4).jpg,images (4).jpg,images (4).jpg,images (4).jpg,images (4).jpg, images (4).jpg"
-                               data-image-titles="House A, House B, House C, House D, House E, House F">House</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-              <!-- <a href="#">Categories</a> -->
-              <a href="how_it_works.html">How it Works</a>
-              <a href="About.html">About us</a>
-            </nav>
-          </div>
-           <!-- Modal for full-page view --> 
-           <div id="image-modal" class="modal">
-            <span class="close">&times;</span>
-            <div class="modal-content">
-                <div id="modal-images" class="modal-inner"></div>
-                <button class="modal-prev">❮</button>
-                <button class="modal-next">❯</button>
-            </div>
-          </div>
-        </div>
-        </div>
-      </header>
 
-    <main>
-        <section class="steps">
-            <div class="step">
-                <img src="./img/new-user-online-registration-sign-260nw-1982734163.webp" alt="Step 1">
-                <h2>Step 1: Sign Up</h2>
-                <p>Register an account on our website to get started.</p>
-            </div>
-            <div class="step">
-                <img src="./img/customisation-icon-vector-illustration-600nw-1123362923.webp" alt="Step 2" id="custom">
-                <h2>Step 2: Customize</h2>
-                <p>Customize your profile and preferences.</p>
-            </div>
-            <div class="step">
-                <img src="./img/the-essential-guide-to-using-images-legally-online.webp" alt="Step 3" id="imagelast">
-                <h2>Step 3: Start Using</h2>
-                <p>Begin using our service and explore the features.</p>
-            </div>
-        </section>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How It Works</title>
+  <link rel="stylesheet" href="./style/work.css">
+  <script src="./script/header.js"></script>
+  <link rel="stylesheet" href="./style/style.css" />
+  <link rel="stylesheet" href="./project/categories.html">
+  <link rel="stylesheet" href="./style/category.css">
+  <link rel="stylesheet" href="./project/how_it_works.html">
+  <script src="./script/app.js"></script>
+  <script src="./script/script2.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="main">
+      <a href="index.html"><img class="logo" src="./img/LOGO.jpg" alt="" /></a>
+      <div class="inse">
+        <input type="search" placeholder="Search and place the highest bid" />
+        <button>Search</button>
+      </div>
+      <span class="shuu">
+        <span class="boo">
+          <img src="./img/person_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+          <!-- <hr> -->
+          <p>Account</p>
+          <img src="./img/keyboard_arrow_down_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+          <!-- <img src="./img/keyboard_arrow_up_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt=""> -->
+        </span>
+        <div class="acc-dropdown">
+          <div>
+            <a href="login.html"><button>SIGN IN</button></a>
+          </div>
+          <div>
+            <span>
+              <img src="./img/person_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+              <a href="login.html">
+                <p>My Account</p>
+              </a>
+            </span>
+            <span>
+              <img src="./img/shopping_cart_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+              <p>My Bids</p>
+            </span>
+            <span>
+              <img src="./img/favorite_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+              <p>Saved Items</p>
+            </span>
+          </div>
+        </div>
+        <div class="login-dropdown">
+          <div>
+            <span>
+              <img src="./img/person_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+              <a href="profile.html">
+                <p>My Account</p>
+              </a>
+            </span>
+            <span>
+              <img src="./img/shopping_cart_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+              <p>My Bids</p>
+            </span>
+            <span>
+              <img src="./img/favorite_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+              <p>Saved Items</p>
+            </span>
+            <span>
+              <img src="./img/mail_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+              <p>Inbox</p>
+            </span>
+          </div>
+          <div>
+            <button id="signoutbtn">Sign Out</button>
+          </div>
+        </div>
+      </span>
+    </div>
+    <div class="categories">
+      <div class="cat-pad">
+        <nav>
+          <nav class="categories-nav">
+            <a href="index.html">Home</a>
+            <a href="auctions.html">Auctions</a>
+            <a href="Auctioneers.html">Auctioneers</a>
+            <ul>
+              <li class="category">
+                <a href="#" class="category-toggle">Category</a>
+                <ul class="subcategories">
+                  <li>
+                    <a href="#" class="subcategory-item" data-title="Cars"
+                      data-images="./project/download.jpg,./project/download.jpg,./project/download.jpg,./project/download.jpg,./project/download.jpg"
+                      data-image-titles="Benz A, Benz B, Benz C, Benz D, Benz E">Cars</a>
+                  </li>
+                  <li>
+                    <a href="#" class="subcategory-item" data-title="Artwork"
+                      data-images="images (3).jpg,images (3).jpg,images (3).jpg,images (3).jpg,images (3).jpg"
+                      data-image-titles="Artwork 1, Artwork 2, Artwork 3, Artwork 4, Artwork 5">Artwork</a>
+                  </li>
+                  <li>
+                    <a href="#" class="subcategory-item" data-title="House"
+                      data-images="images (4).jpg,images (4).jpg,images (4).jpg,images (4).jpg,images (4).jpg, images (4).jpg"
+                      data-image-titles="House A, House B, House C, House D, House E, House F">House</a>
+                  </li>
+                </ul>
+              </li>
             </ul>
-        </section>
-        <section class="contact-form">
-            <h2>Contact Us</h2>
-            <form action="#" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-        
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-        
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-        
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-        
-    </main>
+            <!-- <a href="#">Categories</a> -->
+            <a href="how_it_works.html">How it Works</a>
+            <a href="About.html">About us</a>
+          </nav>
+      </div>
+      <!-- Modal for full-page view -->
+      <div id="image-modal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+          <div id="modal-images" class="modal-inner"></div>
+          <button class="modal-prev">❮</button>
+          <button class="modal-next">❯</button>
+        </div>
+      </div>
+    </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="steps">
+      <div class="step">
+        <img src="./img/new-user-online-registration-sign-260nw-1982734163.webp" alt="Step 1">
+        <h2>Step 1: Sign Up</h2>
+        <p>Register an account on our website to get started.</p>
+      </div>
+      <div class="step">
+        <img src="./img/customisation-icon-vector-illustration-600nw-1123362923.webp" alt="Step 2" id="custom">
+        <h2>Step 2: Customize</h2>
+        <p>Customize your profile and preferences.</p>
+      </div>
+      <div class="step">
+        <img src="./img/the-essential-guide-to-using-images-legally-online.webp" alt="Step 3" id="imagelast">
+        <h2>Step 3: Start Using</h2>
+        <p>Begin using our service and explore the features.</p>
+      </div>
+    </section>
+    </ul>
+    </section>
+    <section class="contact-form">
+      <h2>Contact Us</h2>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+  </main>
 </body>
+
 </html>

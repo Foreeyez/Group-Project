@@ -1,0 +1,139 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.categories-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.categories-nav > ul > li {
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    right: 0rem;
+    /* top: -0.5rem; */
+
+
+}
+
+.categories-nav a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 0px;
+    background: none;
+}
+
+
+
+/* .categories-nav a:hover { */
+    /* position: relative; */
+    /* background:none; */
+    /* opacity: 20%; */
+    /* width: 70%; */
+    /* right: 10px; */
+    /* border-radius: 16px; */
+/* } */
+
+.categories-nav .subcategories {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 110%;
+    white-space: nowrap;
+    background:#5084c1;
+    border: none;
+    z-index: 1;
+    border-radius: 15px;
+    color: red;
+}
+
+.categories-nav .subcategories a {
+    padding: 5px 12px;
+}
+
+.categories-nav .category.open .subcategories {
+    display: block;
+}
+
+#display-area {
+    margin-top: 20px;
+    padding: 15px;
+    border: none;
+    background: none;
+    text-align: center;
+}
+
+#display-title {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.8); /* Black background with opacity */
+}
+
+.modal-content {
+    position: relative;
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 1200px; /* Adjust as needed */
+    background: #fff;
+}
+
+.modal-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-inner img {
+    max-width: 100%;
+    height: auto;
+}
+
+.modal-prev, .modal-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.modal-prev {
+    left: 10px;
+}
+
+.modal-next {
+    right: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #ccc;
+}

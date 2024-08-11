@@ -1,298 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script src="./script/header.js"></script>
-    <script src="./script/app.js"></script>
-    <!-- <script src="./script/script.js"></script> -->
-    <script src="./script/try.js"></script>
-    <script src="./script/login.js"></script>
-    <link rel="stylesheet" href="./style/style.css" />
-    <link rel="stylesheet" href="data.json" />
-    <link rel="stylesheet" href="./project/categories.html" />
-    <link rel="stylesheet" href="./project/category.css" />
-  </head>
-  <body>
-    <header>
-      <div class="main">
-        <a href="index.html"
-          ><img class="logo" src="./img/LOGO.jpg" alt=""
-        /></a>
-        <div class="inse">
-          <input type="search" placeholder="Search and place the highest bid" />
-          <button>Search</button>
-        </div>
-        <span class="shuu">
-          <span class="boo">
-            <img
-              src="./img/person_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
-              alt=""
-            />
-            <!-- <hr> -->
-            <p>Account</p>
-            <img
-              src="./img/keyboard_arrow_down_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
-              alt=""
-            />
-            <!-- <img src="./img/keyboard_arrow_up_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt=""> -->
-          </span>
-          <div class="acc-dropdown">
-            <div>
-              <a href="login.html"><button>SIGN IN</button></a>
-            </div>
-            <div>
-              <span>
-                <img
-                  src="./img/person_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
-                  alt=""
-                />
-                <a href="profile.html"><p>My Account</p></a>
-              </span>
-              <span>
-                <img
-                  src="./img/shopping_cart_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
-                  alt=""
-                />
-                <p>My Bids</p>
-              </span>
-              <span>
-                <img
-                  src="./img/favorite_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
-                  alt=""
-                />
-                <p>Saved Items</p>
-              </span>
-            </div>
-          </div>
-          <div class="login-dropdown">
-            <div>
-              <span>
-                <img
-                  src="./img/person_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
-                  alt=""
-                />
-                <a href="profile.html"><p>My Account</p></a>
-              </span>
-              <span>
-                <img
-                  src="./img/shopping_cart_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
-                  alt=""
-                />
-                <p>My Bids</p>
-              </span>
-              <span>
-                <img
-                  src="./img/favorite_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
-                  alt=""
-                />
-                <p>Saved Items</p>
-              </span>
-              <span>
-                <img
-                  src="./img/mail_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
-                  alt=""
-                />
-                <p>Inbox</p>
-              </span>
-            </div>
-            <div>
-              <button id="signoutbtn">Sign Out</button>
-            </div>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script src="./script/header.js"></script>
+  <script src="./script/app.js"></script>
+  <!-- <script src="./script/script.js"></script> -->
+  <script src="./script/try.js"></script>
+  <script src="./script/login.js"></script>
+  <link rel="stylesheet" href="./style/style.css" />
+  <link rel="stylesheet" href="data.json" />
+  <link rel="stylesheet" href="./project/categories.html" />
+  <link rel="stylesheet" href="./style/category.css" />
+</head>
+
+<body>
+  <header>
+    <div class="main">
+      <a href="index.html"><img class="logo" src="./img/LOGO.jpg" alt="" /></a>
+      <div class="inse">
+        <input type="search" placeholder="Search and place the highest bid" />
+        <button>Search</button>
+      </div>
+      <span class="shuu">
+        <span class="boo">
+          <img src="./img/person_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+          <!-- <hr> -->
+          <p>Account</p>
+          <img src="./img/keyboard_arrow_down_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+          <!-- <img src="./img/keyboard_arrow_up_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt=""> -->
         </span>
-      </div>
-      <div class="categories">
-        <div class="cat-pad">
-          <nav>
-            <nav class="categories-nav">
-              <a href="index.html">Home</a>
-              <a href="auctions.html">Auctions</a>
-              <a href="Auctioneers.html">Auctioneers</a>
-              <ul>
-                <li class="category">
-                  <a href="#" class="category-toggle">Category</a>
-                  <ul class="subcategories">
-                    <li>
-                      <a
-                        href="#"
-                        class="subcategory-item"
-                        data-title="Cars"
-                        data-images="/Group-Project/project/download.jpg,/Group-Project/project/download.jpg,/Group-Project/project/download.jpg,/Group-Project/project/download.jpg,/Group-Project/project/download.jpg"
-                        data-image-titles="Benz A, Benz B, Benz C, Benz D, Benz E"
-                        >Cars</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        class="subcategory-item"
-                        data-title="Artwork"
-                        data-images="images (3).jpg,images (3).jpg,images (3).jpg,images (3).jpg,images (3).jpg"
-                        data-image-titles="Artwork 1, Artwork 2, Artwork 3, Artwork 4, Artwork 5"
-                        >Artwork</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        class="subcategory-item"
-                        data-title="House"
-                        data-images="images (4).jpg,images (4).jpg,images (4).jpg,images (4).jpg,images (4).jpg, images (4).jpg"
-                        data-image-titles="House A, House B, House C, House D, House E, House F"
-                        >House</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-              </ul>
+        <div class="acc-dropdown">
+          <div>
+            <a href="login.html"><button>SIGN IN</button></a>
+          </div>
+          <div>
+            <span>
+              <img src="./img/person_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+              <a href="login.html">
+                <p>My Account</p>
+              </a>
+            </span>
+            <span>
+              <img src="./img/shopping_cart_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+              <p>My Bids</p>
+            </span>
+            <span>
+              <img src="./img/favorite_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+              <p>Saved Items</p>
+            </span>
+          </div>
+        </div>
+        <div class="login-dropdown">
+          <div>
+            <span>
+              <img src="./img/person_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+              <a href="profile.html">
+                <p>My Account</p>
+              </a>
+            </span>
+            <span>
+              <img src="./img/shopping_cart_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+              <p>My Bids</p>
+            </span>
+            <span>
+              <img src="./img/favorite_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+              <p>Saved Items</p>
+            </span>
+            <span>
+              <img src="./img/mail_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+              <p>Inbox</p>
+            </span>
+          </div>
+          <div>
+            <button id="signoutbtn">Sign Out</button>
+          </div>
+        </div>
+      </span>
+    </div>
+    <div class="categories">
+      <div class="cat-pad">
+        <nav>
+          <nav class="categories-nav">
+            <a href="index.html">Home</a>
+            <a href="auctions.html">Auctions</a>
+            <a href="Auctioneers.html">Auctioneers</a>
+            <ul>
+              <li class="category">
+                <a href="#" class="category-toggle">Category</a>
+                <ul class="subcategories">
+                  <li>
+                    <a href="#" class="subcategory-item" data-title="Cars"
+                      data-images="/Group-Project/project/download.jpg,/Group-Project/project/download.jpg,/Group-Project/project/download.jpg,/Group-Project/project/download.jpg,/Group-Project/project/download.jpg"
+                      data-image-titles="Benz A, Benz B, Benz C, Benz D, Benz E">Cars</a>
+                  </li>
+                  <li>
+                    <a href="#" class="subcategory-item" data-title="Artwork"
+                      data-images="images (3).jpg,images (3).jpg,images (3).jpg,images (3).jpg,images (3).jpg"
+                      data-image-titles="Artwork 1, Artwork 2, Artwork 3, Artwork 4, Artwork 5">Artwork</a>
+                  </li>
+                  <li>
+                    <a href="#" class="subcategory-item" data-title="House"
+                      data-images="images (4).jpg,images (4).jpg,images (4).jpg,images (4).jpg,images (4).jpg, images (4).jpg"
+                      data-image-titles="House A, House B, House C, House D, House E, House F">House</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
 
-              <a href="#hiw">How it Works</a>
+            <a href="#hiw">How it Works</a>
 
-              <a href="About.html">About us</a>
-            </nav>
+            <a href="About.html">About us</a>
           </nav>
-          <!-- Modal for full-page view -->
-          <div id="image-modal" class="modal">
-            <span class="close">&times;</span>
-            <div class="modal-content">
-              <div id="modal-images" class="modal-inner"></div>
-              <button class="modal-prev">❮</button>
-              <button class="modal-next">❯</button>
-            </div>
+        </nav>
+        <!-- Modal for full-page view -->
+        <div id="image-modal" class="modal">
+          <span class="close">&times;</span>
+          <div class="modal-content">
+            <div id="modal-images" class="modal-inner"></div>
+            <button class="modal-prev">❮</button>
+            <button class="modal-next">❯</button>
           </div>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <!-- Section 1 -->
-    <div class="wrapper">
-      <div class="wrap_flex my-3">
-        <div class="first_part_index">
-          <div class="auction_img" id="main_img"></div>
-        </div>
-        <div class="second_part_index">
-          <div class="content">
-            <p id="main_cat"></p>
-            <h1 id="main_name"></h1>
-            <p id="main_story"></p>
-            <div class="btn-flex">
-              <a class="btn my-1" href="#" id="bid_n" data-id="2">Bid Now</a>
-              <a class="btn my-1" href="#">View Details</a>
-            </div>
+  <!-- Section 1 -->
+  <div class="wrapper">
+    <div class="wrap_flex my-3">
+      <div class="first_part_index">
+        <div class="auction_img" id="main_img"></div>
+      </div>
+      <div class="second_part_index">
+        <div class="content">
+          <p id="main_cat"></p>
+          <h1 id="main_name"></h1>
+          <p id="main_story"></p>
+          <div class="btn-flex">
+            <a class="btn my-1" href="#" id="bid_n" data-id="2">Bid Now</a>
+            <a class="btn my-1" href="#">View Details</a>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- Section 2 -->
-      <div class="flex-container my-8">
-        <div>
-          <div class="abbs">
-            <div><h1>Explore items</h1></div>
-            <div><p>See more</p></div>
+    <!-- Section 2 -->
+    <div class="flex-container my-8">
+      <div>
+        <div class="abbs">
+          <div>
+            <h1>Explore items</h1>
           </div>
-          <div id="scroll">
-            
-            <!-- <div class="sec2_img" id="r1c1"></div>
+          <div>
+            <p>See more</p>
+          </div>
+        </div>
+        <div id="scroll">
+
+          <!-- <div class="sec2_img" id="r1c1"></div>
             <div class="sec2_img" id="r1c2"></div>
             <div class="sec2_img" id="r1c3"></div> -->
-          </div>
         </div>
       </div>
-      <!-- Section 3 -->
-      <div class="flex-container my-8">
-        <div>
-          <div class="abbs">
-            <div><h1>Explore items</h1></div>
-            <div><p>See more</p></div>
+    </div>
+    <!-- Section 3 -->
+    <div class="flex-container my-8">
+      <div>
+        <div class="abbs">
+          <div>
+            <h1>Explore items</h1>
           </div>
-          <div id="scroll2">
-            <!-- <div class="scroll_img" id="r1c4"></div>
+          <div>
+            <p>See more</p>
+          </div>
+        </div>
+        <div id="scroll2">
+          <!-- <div class="scroll_img" id="r1c4"></div>
             <div class="scroll_img" id="r1c5"></div>
             <div class="scroll_img" id="r1c6"></div>
             <div class="scroll_img" id="r1c7"></div> -->
-          </div>
         </div>
       </div>
+    </div>
 
-      <!-- Section 4 -->
-      <div class="my-8" id="hiw">
-        <h1>How it works</h1>
-        <div class="steps">
-          <div class="step">
-            <img
-              src="./img/new-user-online-registration-sign-260nw-1982734163.webp"
-              alt="Step 1"
-            />
-            <h2>Step 1: Sign Up</h2>
-            <p>Register an account on our website to get started.</p>
-          </div>
-          <div class="step">
-            <img
-              src="./img/customisation-icon-vector-illustration-600nw-1123362923.webp"
-              alt="Step 2"
-              id="custom"
-            />
-            <h2>Step 2: Customize</h2>
-            <p>Customize your profile and preferences.</p>
-          </div>
-          <div class="step">
-            <img
-              src="./img/the-essential-guide-to-using-images-legally-online.webp"
-              alt="Step 3"
-              id="imagelast"
-            />
-            <h2>Step 3: Start Using</h2>
-            <p>Begin using our service and explore the features.</p>
-          </div>
+    <!-- Section 4 -->
+    <div class="my-8" id="hiw">
+      <h1>How it works</h1>
+      <div class="steps">
+        <div class="step">
+          <img src="./img/new-user-online-registration-sign-260nw-1982734163.webp" alt="Step 1" />
+          <h2>Step 1: Sign Up</h2>
+          <p>Register an account on our website to get started.</p>
+        </div>
+        <div class="step">
+          <img src="./img/customisation-icon-vector-illustration-600nw-1123362923.webp" alt="Step 2" id="custom" />
+          <h2>Step 2: Customize</h2>
+          <p>Customize your profile and preferences.</p>
+        </div>
+        <div class="step">
+          <img src="./img/the-essential-guide-to-using-images-legally-online.webp" alt="Step 3" id="imagelast" />
+          <h2>Step 3: Start Using</h2>
+          <p>Begin using our service and explore the features.</p>
         </div>
       </div>
     </div>
-    <!-- Section 5 -->
-    <div class="auctionees">
-      <div class="sec-5 wrapper">
-        <h1>Auctioneers</h1>
-        <div class="sec-5-flex">
-          <h3>Auction house</h3>
-          <h3>Premier</h3>
-          <h3>Fancy & pop</h3>
-          <h3>Jewries</h3>
-          <h3>Ritchie bros</h3>
-        </div>
+  </div>
+  <!-- Section 5 -->
+  <div class="auctionees">
+    <div class="sec-5 wrapper">
+      <h1>Auctioneers</h1>
+      <div class="sec-5-flex">
+        <h3>Auction house</h3>
+        <h3>Premier</h3>
+        <h3>Fancy & pop</h3>
+        <h3>Jewries</h3>
+        <h3>Ritchie bros</h3>
       </div>
     </div>
-  </body>
+  </div>
 
-  <!-- Footer -->
-  <footer>
-    <div id="footer" class="py-3">
-      <div class="foot-space">
-        <ul>
-          <span>Product</span>
-          <br />
-          <li><a href="#">Overview</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Marketplace</a></li>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Integrations</a></li>
-        </ul>
-        <ul>
-          <span>Company</span>
-          <br />
-          <li><a href="#">About</a></li>
-          <li><a href="#">Team</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Careers</a></li>
-        </ul>
-        <ul>
-          <span>Connect</span>
-          <br />
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Newsletter</a></li>
-          <li><a href="#">Linkedin</a></li>
-        </ul>
-      </div>
+</body>
+
+<!-- Footer -->
+<footer>
+  <div id="footer" class="py-3">
+    <div class="foot-space">
+      <ul>
+        <span>Product</span>
+        <br />
+        <li><a href="#">Overview</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Marketplace</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Integrations</a></li>
+      </ul>
+      <ul>
+        <span>Company</span>
+        <br />
+        <li><a href="#">About</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+      <ul>
+        <span>Connect</span>
+        <br />
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Newsletter</a></li>
+        <li><a href="#">Linkedin</a></li>
+      </ul>
     </div>
-  </footer>
+  </div>
+</footer>
+
 </html>

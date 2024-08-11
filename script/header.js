@@ -5,12 +5,24 @@ document.addEventListener("DOMContentLoaded", function () {
   const loginDropdown = document.querySelector(".login-dropdown");
   const signOutButton = document.getElementById("signoutbtn");
 
+  const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
+
+  // Ensure dropdowns are hidden initially
+  accDropdown.style.display = "none";
+  loginDropdown.style.display = "none";
+
   accountButton.addEventListener("click", function () {
-    accDropdown.style.display =
-      accDropdown.style.display === "block" ? "none" : "block";
+    if (isLoggedIn) {
+      loginDropdown.style.display =
+        loginDropdown.style.display === "block" ? "none" : "block";
+    } else {
+      accDropdown.style.display =
+        accDropdown.style.display === "block" ? "none" : "block";
+    }
   });
 
   signOutButton.addEventListener("click", function () {
+    localStorage.setItem("isLoggedIn", "false");
     loginDropdown.style.display = "none";
     accDropdown.style.display = "block";
   });
@@ -26,4 +38,3 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
-
