@@ -1,194 +1,173 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin Dashboard</title>
-    <script src="./script/header.js"></script>
-    <link rel="stylesheet" href="./style/style.css" />
-    <!-- <link rel="stylesheet" href="/Group-Project/project/categories.html"> -->
-    <link rel="stylesheet" href="/Group-Project/project/category.css" />
-    <link rel="stylesheet" href="/Group-Project/project/how_it_works.html" />
-    <link rel="stylesheet" href="/Group-Project/project/work.css" />
-    <script src="/Group-Project/script/app.js"></script>
-  </head>
 
-  <body>
-    <!-- Nav -->
-    <header>
-      <div class="main">
-        <a href="index.html"
-          ><img class="logo" src="./img/LOGO.jpg" alt=""
-        /></a>
-        <div class="inse">
-          <input type="search" placeholder="Search and place the highest bid" />
-          <button>Search</button>
-        </div>
-        <span class="shuu">
-          <span class="boo">
-            <img
-              src="./img/person_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
-              alt=""
-            />
-            <!-- <hr> -->
-            <p>Account</p>
-            <img
-              src="./img/keyboard_arrow_down_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
-              alt=""
-            />
-            <!-- <img src="./img/keyboard_arrow_up_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt=""> -->
-          </span>
-          <div class="acc-dropdown">
-            <div>
-              <a href="login.html"><button>SIGN IN</button></a>
-            </div>
-            <div>
-              <span>
-                <img
-                  src="./img/person_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
-                  alt=""
-                />
-                <p>My Account</p>
-              </span>
-              <span>
-                <img
-                  src="./img/shopping_cart_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
-                  alt=""
-                />
-                <p>My Bids</p>
-              </span>
-              <span>
-                <img
-                  src="./img/favorite_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
-                  alt=""
-                />
-                <p>Saved Items</p>
-              </span>
-            </div>
-          </div>
-          <div class="login-dropdown">
-            <div>
-              <span>
-                <img
-                  src="./img/person_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
-                  alt=""
-                />
-                <p>My Account</p>
-              </span>
-              <span>
-                <img
-                  src="./img/shopping_cart_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
-                  alt=""
-                />
-                <p>My Bids</p>
-              </span>
-              <span>
-                <img
-                  src="./img/favorite_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
-                  alt=""
-                />
-                <p>Saved Items</p>
-              </span>
-              <span>
-                <img
-                  src="./img/mail_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg"
-                  alt=""
-                />
-                <p>Inbox</p>
-              </span>
-            </div>
-            <div>
-              <button id="signoutbtn">Sign Out</button>
-            </div>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard</title>
+  <script src="./script/header.js"></script>
+  <link rel="stylesheet" href="./style/style.css" />
+  <!-- <link rel="stylesheet" href="/Group-Project/project/categories.html"> -->
+  <link rel="stylesheet" href="/Group-Project/project/category.css" />
+  <link rel="stylesheet" href="/Group-Project/project/how_it_works.html" />
+  <link rel="stylesheet" href="/Group-Project/project/work.css" />
+  <script src="/Group-Project/script/app.js"></script>
+  <link rel="stylesheet" href="./style/work.css">
+  <link rel="stylesheet" href="./style/category.css">
+</head>
+
+<body>
+  <!-- Nav -->
+  <header>
+    <div class="main">
+      <a href="index.html"><img class="logo" src="./img/LOGO.jpg" alt="" /></a>
+      <div class="inse">
+        <input type="search" placeholder="Search and place the highest bid" />
+        <button>Search</button>
+      </div>
+      <span class="shuu">
+        <span class="boo">
+          <img src="./img/person_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+          <!-- <hr> -->
+          <p>Account</p>
+          <img src="./img/keyboard_arrow_down_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+          <!-- <img src="./img/keyboard_arrow_up_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt=""> -->
         </span>
-      </div>
-      <div class="categories">
-        <div class="cat-pad">
-          <nav>
-            <!-- <nav class="categories-nav"></nav> -->
-            <a href="index.html">Home</a>
-            <a href="auctions.html">Auctions</a>
-            <a href="Auctioneers.html">Auctioneers</a>
-            <a href="#">Categories</a>
-            <a href="/Group-Project/project/how_it_works.html">How it Works</a>
-            <a href="About.html">About us</a>
-          </nav>
+        <div class="acc-dropdown">
+          <div>
+            <a href="login.html"><button>SIGN IN</button></a>
+          </div>
+          <div>
+            <span>
+              <img src="./img/person_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+              <a href="login.html">
+                <p>My Account</p>
+              </a>
+            </span>
+            <span>
+              <img src="./img/shopping_cart_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+              <p>My Bids</p>
+            </span>
+            <span>
+              <img src="./img/favorite_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+              <p>Saved Items</p>
+            </span>
+          </div>
         </div>
-      </div>
-    </header>
-
-    <!-- Content -->
-    <main>
-      <section id="users">
-        <h2>User Statistics</h2>
-        <div class="card">
-          <h3>Total Sign-ups</h3>
-          <p id="total-signups">Loading...</p>
+        <div class="login-dropdown">
+          <div>
+            <span>
+              <img src="./img/person_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+              <a href="profile.html">
+                <p>My Account</p>
+              </a>
+            </span>
+            <span>
+              <img src="./img/shopping_cart_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+              <p>My Bids</p>
+            </span>
+            <span>
+              <img src="./img/favorite_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+              <p>Saved Items</p>
+            </span>
+            <span>
+              <img src="./img/mail_24dp_5084C1_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+              <p>Inbox</p>
+            </span>
+          </div>
+          <div>
+            <button id="signoutbtn">Sign Out</button>
+          </div>
         </div>
-        <div class="card">
-          <h3>Total Buyers</h3>
-          <p id="total-buyers">Loading...</p>
-        </div>
-        <div class="card">
-          <h3>Total Sellers</h3>
-          <p id="total-sellers">Loading...</p>
-        </div>
-      </section>
-      <section id="sales">
-        <h2>Sales Statistics</h2>
-        <div class="card">
-          <h3>Total Sales</h3>
-          <p id="total-sales">Loading...</p>
-        </div>
-        <div class="card">
-          <h3>Sales This Month</h3>
-          <p id="sales-this-month">Loading...</p>
-        </div>
-      </section>
-      <section id="auctions">
-        <h2>Auction Statistics</h2>
-        <div class="card">
-          <h3>Active Auctions</h3>
-          <p id="active-auctions">Loading...</p>
-        </div>
-        <div class="card">
-          <h3>Completed Auctions</h3>
-          <p id="completed-auctions">Loading...</p>
-        </div>
-      </section>
-    </main>
-    <script src="scripts.js"></script>
-  </body>
-
-  <!-- Footer -->
-  <footer>
-    <div id="footer" class="py-3">
-      <div class="foot-space">
-        <ul>
-          <span>Product</span>
-          <br />
-          <li><a href="#">Overview</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Marketplace</a></li>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Integrations</a></li>
-        </ul>
-        <ul>
-          <span>Company</span>
-          <br />
-          <li><a href="#">About</a></li>
-          <li><a href="#">Team</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Careers</a></li>
-        </ul>
-        <ul>
-          <span>Connect</span>
-          <br />
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Newsletter</a></li>
-          <li><a href="#">Linkedin</a></li>
-        </ul>
+      </span>
+    </div>
+    <div class="categories">
+      <div class="cat-pad">
+        <nav>
+          <!-- <nav class="categories-nav"></nav> -->
+          <a href="index.html">Home</a>
+          <a href="auctions.html">Auctions</a>
+          <a href="Auctioneers.html">Auctioneers</a>
+          <a href="#">Categories</a>
+          <a href="/Group-Project/project/how_it_works.html">How it Works</a>
+          <a href="About.html">About us</a>
+        </nav>
       </div>
     </div>
-  </footer>
+  </header>
+
+  <!-- Content -->
+  <main>
+    <section id="users">
+      <h2>User Statistics</h2>
+      <div class="card">
+        <h3>Total Sign-ups</h3>
+        <p id="total-signups">Loading...</p>
+      </div>
+      <div class="card">
+        <h3>Total Buyers</h3>
+        <p id="total-buyers">Loading...</p>
+      </div>
+      <div class="card">
+        <h3>Total Sellers</h3>
+        <p id="total-sellers">Loading...</p>
+      </div>
+    </section>
+    <section id="sales">
+      <h2>Sales Statistics</h2>
+      <div class="card">
+        <h3>Total Sales</h3>
+        <p id="total-sales">Loading...</p>
+      </div>
+      <div class="card">
+        <h3>Sales This Month</h3>
+        <p id="sales-this-month">Loading...</p>
+      </div>
+    </section>
+    <section id="auctions">
+      <h2>Auction Statistics</h2>
+      <div class="card">
+        <h3>Active Auctions</h3>
+        <p id="active-auctions">Loading...</p>
+      </div>
+      <div class="card">
+        <h3>Completed Auctions</h3>
+        <p id="completed-auctions">Loading...</p>
+      </div>
+    </section>
+  </main>
+  <script src="scripts.js"></script>
+</body>
+
+<!-- Footer -->
+<footer>
+  <div id="footer" class="py-3">
+    <div class="foot-space">
+      <ul>
+        <span>Product</span>
+        <br />
+        <li><a href="#">Overview</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Marketplace</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Integrations</a></li>
+      </ul>
+      <ul>
+        <span>Company</span>
+        <br />
+        <li><a href="#">About</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+      <ul>
+        <span>Connect</span>
+        <br />
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Newsletter</a></li>
+        <li><a href="#">Linkedin</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
 </html>
